@@ -1,0 +1,50 @@
+@import 'styles/variables.scss';
+
+.-st-DropDown{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    background: $box-background-primary;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    p{
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: #494949;
+        line-height: 10px;
+    }
+    &-Options{
+        position: relative;
+        top: -35px;
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s linear;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        p{
+            background: $box-background-primary;
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            transition: all 0.3s linear;
+            &:hover{
+               background: $color-primary;
+               color: white;
+            }
+        }
+        P:last-child{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+}

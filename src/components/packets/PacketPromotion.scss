@@ -1,0 +1,24 @@
+@import 'styles/variables.scss';
+
+.PromoBox{
+    width: 100%;
+    align-items: center;
+    height: 80px;
+    background: white;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    top: -2px; // cover border from internet list section
+    img{
+        height: 90px;
+        position: relative;
+        z-index: 1;
+        margin-left: 2;
+    }
+    span{
+        color: $color-primary;
+        font-size: 12px;
+        font-style: italic;
+        margin-left: 35px;
+    }
+}

@@ -1,0 +1,13 @@
+@import 'styles/variables.scss';
+
+button{
+    background: $color-primary;
+    width: 90%;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+		color: white;
+		cursor: pointer;
+}

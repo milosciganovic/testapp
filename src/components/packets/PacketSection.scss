@@ -1,0 +1,83 @@
+@import 'styles/variables.scss';
+
+.-tp-PacketSection{
+    width: 31%;
+    margin: 0 auto;
+    display: flex;
+    @media (max-width: $tablet-width) {
+        width: 360px;
+    }
+    @media(max-width: $mobile-width){
+        width: 280px;
+    }
+    background-color: $box-background-primary;
+    .-tp-SectionContent{
+        border-bottom: $box-section-border;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        &.PromoSection{
+            padding-bottom: 40px;
+        }
+        &-Title{
+            color: $color-primary;
+            width: 70%;
+            font-style: italic;
+        }
+    }
+}
+
+
+.-SectionHeader{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    order: 1;
+}
+
+.-TvList{
+    order: 2
+}
+.-NetList{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+}
+.-Price{
+    order: 4
+}
+.-SectionFooter{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    order: 5;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width: $tablet-width) {
+    .-SectionHeader, .-TvList, .-NetList, .-Price, .-SectionFooter {order: unset;}
+}
+
+.-tp-ImgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.-tp-ListContainer{
+    flex: 14;
+    text-align: left;
+    width: 7;
+    color: #102542;
+    line-height: 1;
+    li{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+}

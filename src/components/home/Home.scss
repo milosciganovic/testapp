@@ -1,0 +1,53 @@
+@import 'styles/variables.scss';
+
+.tp-home{
+    max-width: 1080px;
+    position: relative;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    &-BoxContainer {
+        display: flex;
+        position: relative;
+        top: 60px;
+        flex-wrap: wrap;
+        &Wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            @media (max-width: $tablet-width) {
+                flex-wrap: nowrap;
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    }
+    &-Featured{
+        background: $box-background-primary;
+        display: flex;
+        position: relative;
+        bottom: -10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 31%;
+        margin: 0 auto;
+        @media (max-width: $tablet-width) {
+            width: 360px;
+        }
+        @media(max-width: $mobile-width){
+            width: 280px;
+        }
+        div{
+            width: 90%;
+            border-bottom: $box-section-border
+        }
+        p{
+            color: $color-primary;
+            font-style: italic;
+        }
+        &Empty{
+            width: 33%;
+        }
+    }
+}
